@@ -13,7 +13,7 @@ gem 'arbre', github: 'gregbell/arbre' # until gregbell/arbre#16 makes it into an
 gem 'rake', require: false
 gem 'rails-i18n' # Provides default i18n for many languages
 
-gem RUBY_ENGINE =~ /jruby/ ? 'jdbc-sqlite3' : 'sqlite3'
+gem RUBY_ENGINE =~ /jruby/ ? 'activerecord-jdbcsqlite3-adapter' : 'sqlite3'
 
 gem 'rubysl' if RUBY_ENGINE =~ /rbx/
 
