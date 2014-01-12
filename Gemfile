@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gemspec
 
 ACTIVE_ADMIN_PATH = File.dirname(__FILE__) unless defined?(ACTIVE_ADMIN_PATH)
@@ -13,6 +12,8 @@ gem 'arbre', github: 'gregbell/arbre' # until gregbell/arbre#16 makes it into an
 
 gem 'rake', require: false
 gem 'rails-i18n' # Provides default i18n for many languages
+
+gem RUBY_PLATFORM =~ /java/ ? 'jdbc-sqlite3' : 'sqlite3'
 
 group :development do
   # Debugging
@@ -44,5 +45,4 @@ group :test do
   gem 'parallel_tests'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'sqlite3'
 end

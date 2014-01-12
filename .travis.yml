@@ -5,7 +5,7 @@ rvm:
   - 1.9.3
   - 2.1.0
   - rbx
-  - jruby-19mode
+  - jruby
 env:
   - RAILS=3.2.16
   - RAILS=4.0.2
