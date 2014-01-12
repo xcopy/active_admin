@@ -1,4 +1,5 @@
 language: ruby
+bundler_args: --without development
 script: bundle exec rake test_with_coveralls
 before_install:
   - gem install bundler # use the latest bundler, since Travis doesn't update for us
