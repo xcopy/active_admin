@@ -46,5 +46,6 @@ group :test do
   gem 'launchy'
   gem 'parallel_tests'
   gem 'rspec-rails'
+  gem 'rubinius-coverage' if RUBY_ENGINE =~ /rbx/ # colszowka/simplecov#250
   gem 'shoulda-matchers'
 end
